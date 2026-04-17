@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+/*============================== desktop view====================== */
+
+body{
+    background: #121212;
+    color:white ;
+    font-family: 'Inter', 'Segoe UI', Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.card-container{
+    background: #1E1E1E;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 700px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin-top: 150px;
+    
+
+}
+figure img{
+    border-radius: 50%;
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #22C55E;
+    
+}
+.uploadLabel{
+    font-size: 15px;
+    padding: 30px;
+    margin-right: 40px;
+    
+}
+#avartarUpload{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.divisor{
+    border: 1px solid #2A2A2A;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+@media (min-width: 768px) {
+    .first-section{
+        display: flex;
+        gap: 50px;
+    }
+    .username{
+        color: #ffffff;
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .bio{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+    .socials{
+        display: flex;
+        gap: 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+    .socials li{
+        cursor: pointer;
+    }
+    .socials li a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .second-section{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .second-section ul{
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+}

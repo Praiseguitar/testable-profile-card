@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testable Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.mincss">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <article data-textid="test-profile-card" class="card-container">
+        <div class="first-section">
+            <figure>
+                <img src="./assets/images/Praise Profile.jpg" alt="Profile picture of Praise Oyekale" data-textid="test-user-avatar" >
+                <label for="avatarUpload" class="uploadLabel">Upload Image</label>
+                <input type="file" name="imageUpload" id="avartarUpload" accept="image/*">
+            </figure>
+            <div class="profile-name-section">
+                <header data-textid="test-user-name" aria-label="user-name" class="username">
+                    Praise Oyekale
+                </header>
+                <div class="divisor"></div>
+                <p data-textid="test-user-bio" class="bio">
+                    Frontend developer focused on building responsive, accesible, and user-frendly web interfaces using modern web technologies
+                </p>
+                <div class="divisor"></div>
+                <p data-textid="test-user-time" class="time"></p>
+                <div class="divisor"></div>
+                <ul data-textid="test-user-social-link" class="socials">
+                    <li data-textid="test-user-social-linkedin">
+                        <a href="http://www.linkedin.com/in/oyekale-praise-stephen-7a0bb13bb?utm_source=share_via&utm_content=profile&utm_medium=member_andriod" target="_blank" rel="noopener noreferrer" aria-label="Visit Linkedin profile">
+                            <i class="fa-brands fa-linkedin"></i>Linkedin
+                        </a>
+                    </li>
+                    <li data-textid="test-user-social-github>
+                        <a href="http://"  target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub profile">
+                            <i class="fa-brands fa-gi thub"></i>GitHub</a>
+                    </li>
+                </ul>
+            
+            </div>
+        </div>
+        <div class="divisor"></div>
+        <div class="second-section">
+            <section class="hobbies-section">
+                <h3>Hobbies</h3>
+                <ul data-textid="test-user-hobbies">
+                    <li>Codind</li>
+                    <li>Teaching</li>
+                    <li>Playing Instruments</li>
+                    <li>Solving Problems</li>
+                </ul>
+            </section>
+            <div class="divisor"></div>
+            <section class="dislike-section">
+                <h3>Dislikes</h3>
+                <ul data-textid="test-user-dislikes">
+                    <li>Procrastination</li>
+                    <li>Laziness</li>
+                    <li>Poverty</li>
+                    <li>Giving Up</li>
+                </ul>
+            </section>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
