@@ -1,4 +1,4 @@
-const timeEl = document.querySelector('[data-textid="test-user-time"]');
+const timeEl = document.querySelector('[data-testid="test-user-time"]');
 
 function updateTime() {
     timeEl.textContent = `Current Time: ${Date.now()}`
@@ -7,7 +7,7 @@ updateTime();
 
 setInterval(updateTime, 1000);
 
-const avatar = document.querySelector('[data-textid="test-user-avatar"]');
+const avatar = document.querySelector('[data-testid="test-user-avatar"]');
 const avatarUpload = document.getElementById("avartarUpload");
 
 avatarUpload.addEventListener("change", () => {
