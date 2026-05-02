@@ -7,11 +7,12 @@ updateTime();
 
 setInterval(updateTime, 1000);
 
-const avatar = document.querySelector('[data-testid="test-user-avatar"]');
+const avatar = document.getElementById('myAvartar');
 const avatarUpload = document.getElementById("avartarUpload");
 
+
 avatarUpload.addEventListener("change", () => {
-    const file = avatarUpload.file[0];
+    const file = avatarUpload.files[0];
 
     if (file) {
         const reader = new FileReader();
@@ -19,6 +20,6 @@ avatarUpload.addEventListener("change", () => {
         reader.onload = function (e) {
             avatar.src = e.target.result
         };
-        reader.readAsDataURL(file)
+        reader.readAsDataURL(file);
     }
 });
